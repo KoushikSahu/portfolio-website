@@ -3,6 +3,10 @@ import './App.css';
 import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
 import EventBox from './components/EventBox'
+import Blogs from './components/Blogs'
+import Skill from './components/Skill'
+import Achievement from './components/Achievement'
+import Experience from './components/Experience'
 
 function App(): JSX.Element {
   return (
@@ -10,6 +14,10 @@ function App(): JSX.Element {
       <div className="left-column">
         <AboutMe />
         <Projects />
+        <Blogs />
+		<Experience />
+        <Skill />
+        <Achievement />
       </div>
       <div className="right-column">
         <EventBox />

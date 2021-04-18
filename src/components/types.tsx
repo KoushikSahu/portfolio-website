@@ -8,7 +8,6 @@ export interface ProjectPropType {
     description: ProjectDescription;
 }
 
-
 export interface EventDescription {
     name: string;
     date: string;
@@ -18,4 +17,10 @@ export interface EventDescription {
     
 export interface EventPropType {
     description: EventDescription;
+}
+
+export interface BlogDescription {
+	name: string;
+	link: string;
+	date: string;
 }
