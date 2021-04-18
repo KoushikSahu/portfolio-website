@@ -7,9 +7,9 @@ function EventBox(): JSX.Element {
     const events: EventDescription[] = [
         {
             name: "Codejam 2021 Round 1B",
-            date: "19 Apr 2021",
-            time_from: "4:30 AM",
-            time_to: "7:30 AM"
+            date: "25 Apr 2021",
+            time_from: "9:30 PM",
+            time_to: "12:00 AM"
         },
     ];
 

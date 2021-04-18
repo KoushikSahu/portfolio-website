@@ -46,3 +46,26 @@
 .project-box:hover {
     text-decoration: underline;
 }
+
+/*contact related styles*/
+.contact-grid {
+	display: grid;
+	grid-template-columns: 100px 400px;
+    grid-column-gap: 1em;
+	padding-bottom: 50px;
+}
+
+.form-label {
+	grid-column: 1/1;
+	margin-bottom: 10px;
+}
+
+.form-input {
+	grid-column: 2/2;
+	margin-bottom: 10px;
+}
+
+.asterisk {
+	color: red;
+}
+

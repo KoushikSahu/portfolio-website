@@ -7,6 +7,7 @@ import Blogs from './components/Blogs'
 import Skill from './components/Skill'
 import Achievement from './components/Achievement'
 import Experience from './components/Experience'
+import Contact from './components/Contact'
 
 function App(): JSX.Element {
   return (
@@ -18,6 +19,7 @@ function App(): JSX.Element {
 		<Experience />
         <Skill />
         <Achievement />
+        <Contact />
       </div>
       <div className="right-column">
         <EventBox />

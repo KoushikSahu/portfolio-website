@@ -24,3 +24,10 @@ export interface BlogDescription {
 	link: string;
 	date: string;
 }
+
+export interface UserInfo {
+	name: string;
+	contact_info: string;
+	message: string;
+}
+
