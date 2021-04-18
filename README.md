@@ -1,6 +1,7 @@
 # Portfolio website
 
 A minimalistic portfolio website made with typescript and reacjs for personal use.
+Deployed [here](https://koushiksahu.github.io/portfolio-website/)
 
 # Getting Started with Create React App
 
