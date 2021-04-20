@@ -36,7 +36,7 @@ function Contact():JSX.Element {
 			content: `Name: ${info.name}\nContact Info: ${info.contact_info}\nMessage: ${info.message}`
 		}
 		try {
-			const response = await fetch(url, {
+			await fetch(url, {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
