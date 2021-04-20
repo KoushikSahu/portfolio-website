@@ -9,6 +9,7 @@ Deployed ----> [here](https://koushiksahu.github.io/portfolio-website/) <----
 - [ ] Modify favicon and title
 - [ ] Move discord channel webhook url to github secret(High priority)
 - [ ] Embed spotify playlist
+- [ ] Add some animations
 
 # Getting Started with Create React App
 
