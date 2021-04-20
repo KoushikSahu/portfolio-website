@@ -1,7 +1,14 @@
 # Portfolio website
 
 A minimalistic portfolio website made with typescript and reacjs for personal use.
-Deployed [here](https://koushiksahu.github.io/portfolio-website/)
+
+Deployed ----> [here](https://koushiksahu.github.io/portfolio-website/) <----
+
+# TODOs
+
+- [ ] Modify favicon and title
+- [ ] Move discord channel webhook url to github secret(High priority)
+- [ ] Embed spotify playlist
 
 # Getting Started with Create React App
 
