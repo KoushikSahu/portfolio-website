@@ -6,7 +6,6 @@ Deployed ----> [here](https://koushiksahu.github.io/portfolio-website/) <----
 
 # TODOs
 
-- [ ] Move discord channel webhook url to github secret(High priority)
 - [ ] Embed spotify playlist
 - [ ] Add some animations
 
