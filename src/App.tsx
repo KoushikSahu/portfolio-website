@@ -8,6 +8,7 @@ import Skill from './components/Skill'
 import Achievement from './components/Achievement'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
+import Spotify from './components/Spotify'
 
 function App(): JSX.Element {
   return (
@@ -23,6 +24,7 @@ function App(): JSX.Element {
       </div>
       <div className="right-column">
         <EventBox />
+		<Spotify />
       </div>
     </div>
   );

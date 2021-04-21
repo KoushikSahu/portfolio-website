@@ -6,7 +6,6 @@ Deployed ----> [here](https://koushiksahu.github.io/portfolio-website/) <----
 
 # TODOs
 
-- [ ] Embed spotify playlist
 - [ ] Add some animations
 
 # Getting Started with Create React App
