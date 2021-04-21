@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { UserInfo } from './types';
 import './style.css';
+import { WEBHOOK_URL } from './webhook'
 
 function Contact():JSX.Element {
 	let [info, setInfo]: [UserInfo, any] = useState({
@@ -31,7 +32,7 @@ function Contact():JSX.Element {
 	}
 
 	const sendToDiscord = async () => {
-		let url: string = "https://discord.com/api/webhooks/833378325140996146/Kq0ehV1FcLzDWTj0Bq8rPaCuOA9jZGz6RnJiU4LqKNQ5Ghk-M3fO7Q4Or5aQWthI3BTZ";
+		let url: string = WEBHOOK_URL;
 		let msg: object = {
 			content: `Name: ${info.name}\nContact Info: ${info.contact_info}\nMessage: ${info.message}`
 		}
