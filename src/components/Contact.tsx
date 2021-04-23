@@ -45,6 +45,11 @@ function Contact():JSX.Element {
 				body: JSON.stringify(msg)
 			});
 			alert('Message sent successfully');
+			setInfo({
+				name: "",
+				contact_info: "",
+				message: ""
+			});
 		}catch(err){
 			alert("Error occured while sending message!");
 		}
