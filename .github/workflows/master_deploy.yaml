@@ -1,0 +1,25 @@
+name: Deploy Master to Github Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use nodejs v15
+        uses: actions/setup-node@v2
+        with:
+          node-version: 15
+      - name: Install npm packages
+        run: npm install
+      - name: Deploy to GH pages
+        run: |
+          git config --global user.email "koushiksahu68@gmail.com"
+          git config --global user.name "Koushik Sahu"
+          git remote set-url origin https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/KoushikSahu/portfolio-website.git
+          npm run deploy
+
