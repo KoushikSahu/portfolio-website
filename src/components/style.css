@@ -69,3 +69,27 @@
 	color: red;
 }
 
+/*for mobile devices*/
+@media (max-width: 480px) {
+	.event-box {
+		margin-top: 20px;
+	}
+
+	.contact-grid {
+		padding-bottom: 0px;
+		grid-column-gap: 0em;
+		grid-template-columns: 1fr 2fr;
+	}
+
+	.project-grid {
+		grid-template-columns: repeat(autofit, 1vw);
+		grid-column-gap: 0em;
+		justify-content: center;
+	}
+
+	.spotify-embed {
+		margin-bottom: 35px;
+		text-align: center;
+	}
+}
+

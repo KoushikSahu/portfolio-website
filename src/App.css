@@ -13,3 +13,24 @@
     justify-self: center;
 }
 
+@media (max-width: 480px) {
+
+	.main {
+		grid-template-columns: 1fr;
+		grid-column-gap: 0px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.left-column {
+		grid-column: 1/1;
+		justify-content: center;
+	}
+
+	.right-column {
+		grid-column: 1/1;
+		justify-content: center;
+	}
+
+}
+

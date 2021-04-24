@@ -6,7 +6,6 @@ Deployed ----> [here](https://koushiksahu.github.io/portfolio-website/) <----
 
 # TODOs
 
-- [ ] Make website responsive
 - [ ] Add some animations
 
 # Getting Started with Create React App
