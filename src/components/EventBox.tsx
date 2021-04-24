@@ -5,6 +5,12 @@ import './style.css';
 
 function EventBox(): JSX.Element {
     const events: EventDescription[] = [
+		{
+			name: "Atcoder Beginner Contest 199",
+			date: "24 Apr 2021",
+			time_from: "5:30 PM",
+			time_to: "7:10 AM"
+		},
         {
             name: "Codejam 2021 Round 1B",
             date: "25 Apr 2021",
