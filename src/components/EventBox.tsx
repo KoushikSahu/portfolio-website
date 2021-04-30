@@ -6,10 +6,10 @@ import './style.css';
 function EventBox(): JSX.Element {
     const events: EventDescription[] = [
 		{
-			name: "Topcoder TCO Round 1B",
-			date: "28 Apr 2021",
-			time_from: "4:30 PM",
-			time_to: "6:30 AM"
+			name: "Google Codejam 2021 1C",
+			date: "1 May 2021",
+			time_from: "2:30 PM",
+			time_to: "5:00 PM"
 		},
     ];
 
