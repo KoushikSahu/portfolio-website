@@ -1,0 +1,19 @@
+name: Push Docker Package to GH Registry
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  push_package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: docker login
+        run: docker login ghcr.io -u koushiksahu --password ${{ secrets.DOCKER_PERSONAL_ACCESS_TOKEN }}
+      - name: docker build
+        run: docker build . -t ghcr.io/koushiksahu/portfolio-website:latest
+      - name: gh registry push
+        run: docker push ghcr.io/koushiksahu/portfolio-website
+
