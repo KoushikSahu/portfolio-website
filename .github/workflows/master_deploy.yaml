@@ -1,4 +1,4 @@
-name: deploy main
+name: Deploy Master to Github Pages
 
 on:
   push:
@@ -7,7 +7,6 @@ on:
 
 jobs:
   build:
-    name: deploy main build to gh pages
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -23,16 +22,4 @@ jobs:
           git config --global user.name "Koushik Sahu"
           git remote set-url origin https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/KoushikSahu/portfolio-website.git
           npm run deploy
-
-  push_package:
-    name: push docker package to gh registry
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: docker login
-        run: docker login ghcr.io -u koushiksahu --password ${{ secrets.DOCKER_PERSONAL_ACCESS_TOKEN }}
-      - name: docker build
-        run: docker build . -t ghcr.io/koushiksahu/portfolio-website:latest
-      - name: gh registry push
-        run: docker push ghcr.io/koushiksahu/portfolio-website
 
