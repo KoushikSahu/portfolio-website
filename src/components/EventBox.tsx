@@ -6,10 +6,10 @@ import './style.css';
 function EventBox(): JSX.Element {
     const events: EventDescription[] = [
 		{
-			name: "Google Codejam 2021 1C",
-			date: "1 May 2021",
-			time_from: "2:30 PM",
-			time_to: "5:00 PM"
+			name: "ALLES! CTF 2021",
+			date: "3-5 Sept 2021",
+			time_from: "All day",
+			time_to: "All day"
 		},
     ];
 
