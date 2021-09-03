@@ -7,6 +7,7 @@ Deployed ----> [here](https://koushiksahu.github.io/portfolio-website/) <----
 # TODOs
 
 - [ ] Add some animations
+- [ ] Add dark mode
 
 # Getting Started with Create React App
 
