@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { UserInfo } from './types';
-import './style.css';
 import { WEBHOOK_URL } from './webhook'
 
 function Contact():JSX.Element {
@@ -61,22 +60,32 @@ function Contact():JSX.Element {
 			info.contact_info.length > 0 &&
 			info.message.length > 0){
 				sendToDiscord();
+		}else{
+			alert("All fields are required");
 		}
 	}
 
 
 	return (
 		<div>
-			<h1 className="heading-text">Contact me</h1>
-			<form onSubmit={submit}>
-				<span className="contact-grid">
-				<label className="form-label">Name<span className="asterisk">*</span>:</label>
-				<input className="form-input" type="text" name="name" placeholder="Full Name" value={info.name} onChange={handleName} />
-				<label className="form-label">Contact Info<span className="asterisk">*</span>:</label>
-				<input className="form-input" type="text" name="contact_info" placeholder="E-mail/Contact no." value={info.contact_info} onChange={handleContact}/>
-				<label className="form-label">Message<span className="asterisk">*</span>:</label>
-				<textarea className="form-input" name="message" placeholder="Enter Message" value={info.message} rows={5} onChange={handleMessage}/>
-				<input type="submit" name="send_info" value="Submit" />
+			<h1 className="px-5 py-1 mt-3 text-xl shadow-md bg-slate-800">Contact me</h1>
+			<form className="px-5 py-1" onSubmit={submit}>
+				<span>
+					<div className="px-5 py-1 grid lg:grid-cols-6">
+						<label className="lg:col-span-1">Name<span>*</span>:</label>
+						<input className="w-full pl-2 rounded lg:col-span-5 bg-slate-700" type="text" name="name" placeholder="Full Name" value={info.name} onChange={handleName} />
+					</div>
+					<div className="px-5 py-1 grid lg:grid-cols-6">
+						<label className="lg:col-span-1">Contact Info<span className="asterisk">*</span>:</label>
+						<input className="w-full pl-2 rounded lg:col-span-5 bg-slate-700" type="text" name="contact_info" placeholder="E-mail/Contact no." value={info.contact_info} onChange={handleContact}/>
+					</div>
+					<div className="px-5 py-1 grid lg:grid-cols-6">
+						<label className="lg:col-span-1">Message<span>*</span>:</label>
+						<textarea className="w-full pl-2 rounded lg:col-span-5 bg-slate-700" name="message" placeholder="Enter Message" value={info.message} rows={5} onChange={handleMessage}/>
+					</div>
+					<div className="flex justify-center">
+						<input type="submit" name="send_info" value="Submit" className="px-5 py-1 mt-2 ml-1 border-2 rounded shadow border-slate-500 hover:bg-slate-500 hover:text-slate-900 hover:shadow-large transform hover:scale-105 transition hover:ease-in-out"/>
+					</div>
 				</span>
 			</form>
 		</div>

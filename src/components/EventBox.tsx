@@ -1,7 +1,6 @@
 import React from 'react';
 import { EventDescription } from './types';
 import Event from './Event';
-import './style.css';
 
 function EventBox(): JSX.Element {
     const events: EventDescription[] = [
@@ -14,11 +13,11 @@ function EventBox(): JSX.Element {
     ];
 
     return (
-        <div className="event-box">
-            <h1 className="heading-text">Events</h1>
+        <div>
+            <h1 className="px-5 py-1 mt-3 text-xl border-l-8 shadow-md md:mt-0 border-slate-800">Events</h1>
             <ul>
                 {events.map((item:EventDescription, idx:number):JSX.Element => {
-                    return <li key={idx}><Event description={item} /></li>;
+                    return <li className="px-5 py-1" key={idx}><Event description={item} /></li>;
                 })}
             </ul>
         </div>
