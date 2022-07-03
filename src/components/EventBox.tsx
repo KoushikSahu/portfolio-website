@@ -3,14 +3,7 @@ import { EventDescription } from './types';
 import Event from './Event';
 
 function EventBox(): JSX.Element {
-    const events: EventDescription[] = [
-		{
-			name: "ALLES! CTF 2021",
-			date: "3-5 Sept 2021",
-			time_from: "All day",
-			time_to: "All day"
-		},
-    ];
+    const events: EventDescription[] = [];
 
     return (
         <div>
